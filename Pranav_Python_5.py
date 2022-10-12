@@ -18,6 +18,7 @@ import argparse
 pub_key=os.getenv('pub_key')
 priv_key=os.getenv('priv_key')'''
 
+#Here we are dynamically trying to input the public and private keys from the user to connect to the api
 ts= '2'
 parser= argparse.ArgumentParser(description="Enter Keys")
 parser.add_argument('pub_key', type=str, help='Enter Public Key')
@@ -26,10 +27,6 @@ args=parser.parse_args()
 pub_key= getattr(args, 'pub_key', 'Public Key Not Entered')
 priv_key=getattr(args, 'priv_key', 'Private Key Not Entered')
 
-
-#Here we are dynamically trying to input the public and private keys from the user to connect to the api
-#pub_key=str(input("Enter public key"))
-#priv_key=str(input("Enter private key"))
 api_key=pub_key
 
 #We have declared the list of columns in out dataframe using an dictionary 
