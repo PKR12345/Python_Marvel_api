@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+mypackage/__init__.py
+mypackage/filter_data.py
+mypackage/filter_data_condition.py
+mypackage/filter_rows.py
+mypackage/hash_func.py
+pkr_marvel.egg-info/PKG-INFO
+pkr_marvel.egg-info/SOURCES.txt
+pkr_marvel.egg-info/dependency_links.txt
+pkr_marvel.egg-info/top_level.txt
