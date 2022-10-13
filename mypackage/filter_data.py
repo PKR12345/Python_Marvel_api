@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 
 #function to print the required columns in the dataframe
-def activity_3(temp_dict,api, hash_fun, n_char):
+def activity_3(temp_dict,api, hash_fun, lst):
     ''' The function will return an error for missing api and hash parameter. For every character present in the 
     list of characters we can loop it using a for loop and we must also take care that all the records are present in the dataframe wherever the match us found'''
     try:
@@ -14,7 +14,7 @@ def activity_3(temp_dict,api, hash_fun, n_char):
             raise(hash_error(''))
         elif(api==''):
             raise(api_error(''))
-        for i in n_char:
+        for i in lst:
             temp_offset_count=0
             true_count=100
             while(true_count==100):
